@@ -1,9 +1,9 @@
 ### Hi there 👋
 
-⏳ Year progress { █████████▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ } 30.97 %
+⏳ Year progress { ████████████▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁ } 40.67 %
 
 ---
 
-⏰ Updated on Mon, 24 Apr 2023 00:56:34 GMT
+⏰ Updated on Mon, 29 May 2023 10:57:49 GMT
 
-![Progress Bar CI](https://github.com/liununu/liununu/workflows/Progress%20Bar%20CI/badge.svg)
+![Progress Bar CI](https://github.com/JuvenileQ/Progress-Bar-CI/workflows/main/badge.svg)
