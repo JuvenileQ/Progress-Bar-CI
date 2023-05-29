@@ -1,0 +1,30 @@
+name: Progress Bar CI
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 签出代码
+      uses: actions/checkout@main
+
+    - name: 部署 Node.js
+      uses: actions/setup-node@main
+      with:
+        node-version: 'latest'
+
+    - name: 更新 README.md
+      run: node index.js > README.md
+
+    - name: 提交 & 推送 代码
+      run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '39209399+JuvenileQ@users.noreply.github.com'
+          git commit -am "bot: update README.md automatically"
+          git push
